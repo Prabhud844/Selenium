@@ -1,0 +1,34 @@
+package Test.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class nonrepatestring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Write a program to find out first non repeated character from input String?
+		
+		System.out.println(printNoReptingcharcter("abcaabcdedxy"));
+
+	}
+
+	private static Character printNoReptingcharcter(String inpustring) {
+		char[] chars =inpustring.toCharArray();
+		
+		List<Character> discahrdchars = new ArrayList<Character>();
+		for (int i =0;i<=chars.length;i++){
+			char c =chars[i];
+			
+			if (discahrdchars.contains(c)) {
+				continue;
+				
+			}
+		}
+		
+		return null;
+		
+	}
+	
+}

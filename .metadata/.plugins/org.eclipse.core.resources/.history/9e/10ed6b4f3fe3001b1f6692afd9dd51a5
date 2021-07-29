@@ -1,0 +1,14 @@
+package Test.Test;
+
+public class printallcharoccu {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Print characters and their frequencies in order of occurrence
+		
+		
+
+	}
+
+}

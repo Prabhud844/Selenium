@@ -1,0 +1,22 @@
+package Test.Test;
+
+import java.util.Scanner;
+
+public abstract class firststringeq2ndstr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String sc1 = sc.nextLine();
+		
+		String sc2 = sc.nextLine();
+		
+		sc.close();
+		
+		
+
+	}
+
+}

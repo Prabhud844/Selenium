@@ -1,0 +1,62 @@
+package Apitesting.Apitesting;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+
+
+
+public class testapi {
+	
+
+	public static void main(String[] args) throws IOException {
+		
+		testapi concex =  new testapi();
+		concex.getmethodex();
+	}
+	
+	public void getmethodex() throws IOException{
+		
+		String 	getlink ="https://gorest.co.in/public/v1/users/2239";
+		try {
+			URL url = new URL(getlink);
+			
+			HttpURLConnection con = (HttpURLConnection) url.openConnection();
+			
+			con.setRequestMethod("GET");
+			
+			con.connect();
+			int Satatuscode = con.getResponseCode();
+			
+			System.out.println("Status code" +Satatuscode);
+			
+			String Message  = con.getResponseMessage();
+			System.out.println("Message"+ Message);
+			
+			InputStream inpstr = con.getInputStream();
+			InputStreamReader inpread = new InputStreamReader(inpstr);
+			
+			BufferedReader bufferred = new BufferedReader(inpread);
+			
+			String line  = bufferred.readLine();
+			
+			while (line !=null) {
+				
+			}
+			
+			
+			
+			
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

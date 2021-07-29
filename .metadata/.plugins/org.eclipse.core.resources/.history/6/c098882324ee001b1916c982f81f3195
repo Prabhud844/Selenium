@@ -1,0 +1,35 @@
+package Apitesting.Apitesting;
+
+import org.junit.Assert;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class ap2 {
+	int statusCode;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+	public void getUserDetailsTest() {
+        RestAssured.baseURI = "https://reqres.in/api/users/";
+
+        RequestSpecification httpRequest = RestAssured.given();
+
+        Response response = httpRequest.request(Method.GET, "2");
+
+        // Response response = get("https://reqres.in/api/users/2");
+
+        String responseBody = response.getBody().asString();
+
+        statusCode = response.getStatusCode();
+       
+
+    }
+
+}

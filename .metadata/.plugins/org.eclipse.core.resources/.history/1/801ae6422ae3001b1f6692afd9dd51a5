@@ -1,0 +1,10 @@
+package Test.Test;
+
+public abstract class firststringeq2ndstr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
