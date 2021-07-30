@@ -33,6 +33,9 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\372262\workspace\Testing\Testing"/>
+			<item value="C:\Users\372262\workspace\Testing\JavaTopics2021"/>
+			<item value="C:\Users\372262\workspace\Testing\seleniumJava"/>
 			<item value="C:\Users\372262\workspace\Testing\rest-assured-demo-master"/>
 			<item value="C:\Users\372262\workspace\Testing\restassured-complete-basic-example-master"/>
 			<item value="C:\Users\372262\git\cucumber-page-object-model"/>
@@ -59,11 +62,13 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="JavaTopics2021"/>
 			<item value="MobileTesting"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="JavaTopics2021"/>
 			<item value="MobileTesting"/>
 		</list>
 		<list key="version">

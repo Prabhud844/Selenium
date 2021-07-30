@@ -1,0 +1,5 @@
+C:\Users\372262\workspace\Testing\Test
+
+set classpath=C:\Users\372262\workspace\Testing\Test\bin;C:\Users\372262\workspace\Testing\Test\lib\*
+
+java org.testng.TestNG C:\Users\372262\workspace\Testing\Test\testng.xml

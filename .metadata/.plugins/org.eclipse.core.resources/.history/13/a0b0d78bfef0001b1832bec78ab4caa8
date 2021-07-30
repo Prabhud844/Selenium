@@ -1,0 +1,13 @@
+package ApiTest;
+
+import org.testng.annotations.Test;
+
+public class FirstApi {
+	
+	public void pathParamTest() {
+		given().pathParam("user", "user1")
+		.when().get(" http://demo6116845.mockable.io/profile/{user}")
+		.then().statusCode(200);
+		}
+
+}
